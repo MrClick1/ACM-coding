@@ -1,6 +1,6 @@
 # ACM 刷题框架（C++17）
 
-面向秋招笔试的本地 ACM/OJ 模式刷题仓库，重点训练牛客、米哈游等企业笔试环境：自己处理 `stdin` / `stdout`、编写完整 `main()`、本地编译运行测试。
+面向秋招笔试的本地 ACM/OJ 模式刷题仓库，重点训练牛客、米哈游、拼多多、百度等企业笔试环境：自己处理 `stdin` / `stdout`、编写完整 `main()`、本地编译运行测试。
 
 ## 刷题流程
 
@@ -70,21 +70,25 @@ ACM-coding/
 │   │   ├── Q2/
 │   │   └── Q3/
 │   └── practice/           # 自由练习
-└── pdd/                    # 拼多多秋招提前批专项
-    ├── README.md           # 拼多多专项题单
-    ├── 2026-03-15/Q1/
-    │   ├── problem.md      # 题目描述（已内置练习版）
-    │   ├── main.cpp
-    │   ├── input.txt
-    │   ├── expected.txt
-    │   └── notes.md
-    ├── 2026-03-29/Q1,Q2,Q3/   # 同上结构
-    ├── 2026-04-12/Q1,Q2/
-    ├── 2026-06-16/Q2/
-    └── 2025-08-03/Q3/
+├── pdd/                    # 拼多多秋招提前批专项
+│   ├── README.md           # 拼多多专项题单
+│   ├── 2026-03-15/Q1/
+│   │   ├── problem.md      # 题目描述（已内置练习版）
+│   │   ├── main.cpp
+│   │   ├── input.txt
+│   │   ├── expected.txt
+│   │   └── notes.md
+│   ├── 2026-03-29/Q1,Q2,Q3/   # 同上结构
+│   ├── 2026-04-12/Q1,Q2/
+│   ├── 2026-06-16/Q2/
+│   └── 2025-08-03/Q3/
+└── baidu/                  # 百度校招技术岗专项
+    ├── README.md           # 百度专项题单与模拟安排
+    ├── 2026-08-13/Q1,Q2,Q3/
+    └── 2026-08-06/Q1,Q2,Q3/
 ```
 
-> pdd 下每个 Q 目录结构与 mhy 相同：`problem.md`（已内置重构版练习题目）+ `main.cpp` + `input.txt`（样例 1）+ `expected.txt` + `notes.md`。
+> pdd 与 baidu 下每个 Q 目录结构与 mhy 相同：`problem.md`（已内置公开回忆/重构版练习题目）+ `main.cpp` + `input.txt`（样例 1）+ `expected.txt` + `notes.md`。
 
 ## 本地编译运行
 
@@ -116,8 +120,8 @@ cmd /c ".\mhy\2026-03-14\Q1\main.exe < .\mhy\2026-03-14\Q1\input.txt"
 
 ## 如何开始一道新题
 
-1. 从 [mhy/README.md](mhy/README.md) 或 [pdd/README.md](pdd/README.md) 选择题目（近期：mhy `2026-03-14` Q1~Q3、pdd `2026-03-15` Q1 等）。
-2. 若题目描述缺失，把完整题目粘贴到该题目录下的 `problem.md`（mhy Q1~Q3 与 pdd 8 道已内置重构版练习题目）。
+1. 从 [mhy/README.md](mhy/README.md)、[pdd/README.md](pdd/README.md) 或 [baidu/README.md](baidu/README.md) 选择题目（百度近期场次：`2026-08-13` 与 `2026-08-06`）。
+2. 若题目描述缺失，把完整题目粘贴到该题目录下的 `problem.md`（mhy Q1~Q3、pdd 8 道与 baidu 6 道已内置练习题面）。
 3. 复制模板：`Copy-Item .\templates\acm.cpp .\mhy\2026-03-14\Q1\main.cpp`（新题目录先建好）。
 4. 阅读题目 → 分析数据范围 → 判断复杂度，再动手写 `main.cpp`。
 5. `input.txt` / `expected.txt` 已填入样例 1，可直接运行；想换样例时手动替换。
